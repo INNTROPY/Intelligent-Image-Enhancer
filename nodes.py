@@ -25,7 +25,7 @@ class IIE_Upscaler(ComfyNodeABC):
                     "multiline": True,
                     "tooltip": "Editable prompt for Ollama."
                 }),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 2**32 - 1, "tooltip": "Seed for prompt generation and upscaling."}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "tooltip": "Seed for prompt generation and upscaling."}),
                 "keep_alive": ("INT", {
                     "default": 0,
                     "min": 0,
