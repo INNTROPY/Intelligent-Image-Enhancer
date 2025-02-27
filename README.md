@@ -34,8 +34,6 @@ El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal d
         - Los `tile_prompts` (estructurados en un diccionario con identificadores únicos).
         - La imagen con los tiles etiquetados.
 
----
-
 ### **2. Nodo: IIE_Prompt_Editor**
 
 **Funcionalidades:**
@@ -51,8 +49,6 @@ El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal d
     - Envía:
         - Los prompts editados por el usuario.
         - Los identificadores de los prompts editados (para que el siguiente nodo pueda combinarlos con los originales).
-
----
 
 ### **3. Nodo: IIE_Tile_Detailer**
 
@@ -75,8 +71,6 @@ El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal d
 5. **Salida de datos**:
     - Envía la imagen final procesada para que pueda ser guardada o utilizada en etapas posteriores.
 
----
-
 ### **Flujo de Datos**
 
 1. **Nodo 1 (IIE_Upscaler)**:
@@ -95,8 +89,6 @@ El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal d
         - Los prompts generados automáticamente.
         - Los prompts editados por el usuario.
     - Procesa los tiles y genera la imagen final.
-
----
 
 ### **Puntos Clave**
 
