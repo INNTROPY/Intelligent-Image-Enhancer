@@ -2,19 +2,17 @@
 
 ## **Contexto y Objetivo del Proyecto**
 
-El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal desarrollar un conjunto de nodos personalizados para **ComfyUI** que permitan escalar imágenes de manera ****inteligente gracias a:
+El proyecto **Intelligent Image Enhancer (IIE)** tiene como objetivo principal desarrollar un conjunto de nodos personalizados para **ComfyUI** que permitan escalar imágenes de manera inteligente gracias a:
 
 1. Escalado mediante modelos avanzados de superresolución.
-2. **Integración en el procedo de escalado de descripciones automáticas detalladas de las imágenes** (prompts) mediante el uso de modelos de lenguaje de **Ollama en local**. La solución p**ermite la edición de los prompts generados** para que el usuario pueda ajustar los resultados y volver a ejecutar el flujo si lo desea.
-3. **División de la imagen escalada en mosaicos (tiles)** para procesarlas por partes, facilitando el manejo de imágenes grandes y optimizando el uso de memoria. Cada tile es mejorado con la introducción de detalles también fortalecidos por prompts específicos de cada tile.
+2. Integración en el procedo de escalado de descripciones automáticas detalladas de las imágenes (prompts) mediante el uso de modelos de lenguaje de Ollama en local. La solución permite la edición de los prompts generados para que el usuario pueda ajustar los resultados y volver a ejecutar el flujo si lo desea.
+3. División de la imagen escalada en mosaicos para procesarlas por partes, facilitando el manejo de imágenes grandes y optimizando el uso de memoria. Cada tile es mejorado con la introducción de detalles también fortalecidos por prompts específicos para cada tile.
 
 ## **Esquema Estratégico Completo del Proyecto Intelligent Image Enhancer (IIE)**
 
----
-
 ### **1. Nodo: IIE_Upscaler**
 
-**Funcionalidades:**
+#### **Funcionalidades:**
 
 1. **Generación del `general_prompt`**:
     - Utiliza Ollama para generar una descripción detallada de la imagen completa.
